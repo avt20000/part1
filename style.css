@@ -1,5 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "setimo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
     margin-top: 50px;
     font-size: 3rem;
@@ -10,6 +12,17 @@ body {
     flex-direction: column;
 
 }
+
+h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+
+  h3{
+    font-size: 1.5rem;
+  }
 #image {
     display: none; /* Hide image by default */
     margin-top: 20px;
@@ -22,15 +35,37 @@ body {
     text-decoration: none;
     font-size: 2rem;
     border: 0;
-    background-color: white;
+    color: orange;
+    background-color: transparent;
     &:hover{
-        color: rgb(255, 140, 0);
-      
+        opacity: 0.7;
+        cursor: pointer;
     }
 }
 
 input {
     font-size: 2rem;
-    color: orange;
 
 }
+
+.box2{
+    display: flex;
+    align-items: left flex-start;
+    flex-direction: row;
+    margin: 25px;
+  }
+
+  .link{
+    font-size: 2rem;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  a{
+    text-decoration: none;
+    color: orange;
+    &:hover{
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }

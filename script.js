@@ -154,3 +154,17 @@ var images = {
       
   }
   
+  function playAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.play()
+        .then(() => {
+            // Autoplay started successfully
+        })
+        .catch(error => {
+            // Autoplay was prevented. Show a UI element to allow the user to start playback
+            console.error("Autoplay was prevented:", error);
+            document.body.addEventListener('click', function() {
+                audio.play();
+            }, { once: true });
+        });
+}
